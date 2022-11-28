@@ -1,0 +1,95 @@
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/public/images/imagen-lago.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    width:  100%;
+    max-width: 400px;
+    background-color: #9ea3cc54;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card__header,
+.card__footer,
+.card__temp {
+    grid-column: span 2;
+}
+.card__title {
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+.card__subtitle {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 450;
+}
+
+.card__temp {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   padding-top: 20px;
+   font-weight: bolder;
+
+}
+
+.card__description {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
+.card__list {
+    display: grid;
+    gap: 8px;
+}
+
+.card__item {
+    font-size: .9rem;
+    font-weight: 250;
+}
+
+.card__footer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card__btn {
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background-color: #3a48b562;
+    box-shadow: 0 0 15px #5066b5;
+}
+
+.card__btn:hover {
+    transform: scale(1.05);
+}
+
+.card__btn:active {
+    transform: scale(1);
+    box-shadow: none;
+}
